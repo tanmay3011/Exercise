@@ -8,143 +8,204 @@
       HTML Form Exercise
     </title>  
     <style>
-      #di{background-color: #C0C0C0; margin: 0px auto 0px auto; width: 800px;}
+      #main_frame{background-color: #C0C0C0; margin: 0px auto 0px auto; width: 800px;}
       .bgc{background-color: #FFF000}   
     </style>
   </head>
   
   <body >
-    <div id='di'>
+    <div id='main_frame'>
       <h1 align='center'>
-	HTML Form Exercise
+        HTML Form Exercise
       </h1>
       <p>
-        <font color='red'>
-	  Please note:
-        </font>
-	This example demonstrates how HTML forms can be used.Submit button should submit the button and reset
+        <span style="color:red;">
+          <b>Please note:</b>
+        </span>
+        This example demonstrates how HTML forms can be used.Submit button should submit the button and reset
         button should reset the form(revert changes in the form fields).The form layout should be the same as below.
       </p>
+
       <form name="contact_form" action="http:\\" method="POST">
-	<br>
-	<b>
-	  &nbsp &nbsp &nbsp &nbspContact Form
-	</b>
-	<br>
-	
-	<br>
-	Your name*:<input type='text' name='name' required>
-	<br>
-	
-	<br>
-	E-mail*:<input type='email' class='bgc' name='email' required>
-	<br>
-	
-	<br>
-	Phone number:<input type='tel' class='bgc'  name='Ph-no.'>
-	<br>	
-	
-	<br>
-	Website*:<input type='url' name='url' value="http://" required>
-	<br>
-  	
-	<br>
-	Comments*:
-        <br>	  
-	<textarea cols="35" rows="7" name="comment" > </textarea>
-     	<br>
+        <table>
+          <b>
+            &nbsp; &nbsp;Contact Form
+          </b>
+          <tr>
+            <td> &#9633; </td>
+            <td> &#9633; </td>
+          </tr>
+          
+          <tr>
+            <td>Your name*:</td>
+            <td><input type='text' name='name' required></td>
+          </tr>
+          
+          <tr>
+            <td>E-mail*:</td>
+            <td><input type='email' class='bgc' name='email' required></td>
+          </tr>
+          
+          <tr>
+            <td>Phone number:</td>
+            <td><input type='tel' class='bgc'  name='Ph-no.'></td>
+          </tr>  
+          
+          <tr>
+            <td>Website*:</td>
+            <td><input type='url' name='url' value="http://" required></td>
+          </tr>
+            
+          <tr>
+            <td>Comments*:</td>
+            <td><textarea cols="30" rows="7" name="comment" style="resize:none;"></textarea></td>
+          </tr>
 
-     	<br>
-   	<b>
-          Text Field:
-        </b>
-        <br>
-	  Your name:<input type='text' class='bgc' name='name' >
-	<br>
-	  
-        <br>	
-	<b>
-          Password field
-        </b>
-        <br>
-	Password:<input type='password' name='pswd'>
-	<br>
-	 
-        <br>
-	<b>
-	  Radio buttons
-	</b>
-	<br>
-	Do you like pizza?
-	<br>
-	<input type='radio' name='choice' value='Yes' checked>Yes<br>
-	<input type='radio' name='choice' value='No'>No<br>
-	<input type='radio' name='choice' value='Maybe'>Maybe<br>
-	<input type='radio' name='choice' value='Nevertried'>Never tried<br>
-        <br>
+          <tr>  
+            <td>
+              <b>
+                Text Field:
+              </b>
+            </td>
+          </tr>
+          
+          <tr>
+            <td>Your name:</td>
+            <td><input type='text' class='bgc' name='name' ></td>
+          </tr>
+            
+          <tr>
+            <td>  
+              <b>
+                Password field
+              </b>
+            </td>
+          <tr>
 
-	
-	<b>
-	  Check Box
-	</b>
-  	<br>
-	<input type='checkbox' name='check'>Check this box if you like our service
-	<br>
-         
-	<br>
-	<b>Text area</b>
-   	<br>
-	Anything you would like to say?
-	<br>
-	<textarea cols='40' rows='5' name='review'> </textarea>
-   	<br>
+          <tr>  
+            <td>Password:</td>
+            <td><input type='password' name='pswd'></td>
+          </tr>
+           
+          <tr>
+            <td>
+              <b>
+                Radio buttons
+              </b>
+            </td>
+          </tr>
 
-	<br>
-	<b>
-	  I Like
-	</b>
- 	<br>
-	<section class="veg">
-	  <select id="veg1" size="5" multiple>
-	    <option>Mushroom</option>
-	    <option>Green peppers</option>
-	    <option>Onions</option>
-	    <option>Tomatoes</option>
-	    <option>Olives</option>
-	  </select>   
-	</section>
-	<br>
+          <tr>
+            <td>Do you like pizza?</td>
+          </tr>
+        
+          <tr>
+            <td><input type='radio' name='choice' value='Yes' checked>Yes</td>
+          </tr>
+          <tr>
+            <td><input type='radio' name='choice' value='No'>No</td>
+          </tr>
+          <tr>
+            <td><input type='radio' name='choice' value='Maybe'>Maybe<td>
+          </tr>
+          <tr>
+            <td><input type='radio' name='choice' value='Nevertried'>Never tried</td>
+          </tr>
+          
+       
+          <tr>
+            <td>
+              <b>
+                Check Box
+              </b>
+            </td>
+          </tr>
+          <tr>  
+            <td><input type='checkbox' name='check'>Check this box if you like our service</td>
+          </tr>
+                 
+          <tr>
+            <td>
+              <b>
+                Text area
+              </b>
+            </td>
+          </tr>
+          <tr>
+            <td>Anything you would like to say?</td>
+          </tr>
+          <tr>
+            <td><textarea cols='30' rows='5' name='review' style="resize:none;"> </textarea></td>
+          </tr>
 
-  	
-	<b>
-	  Menu
-	</b>
-  	<br>
-	Your favourite color:
-	<br>
-	<select name="color">
-	  <option value="Red">Red</option>
-	  <option value="Green">Green</option>
-	  <option value="Blue">Blue</option>
-	</select>
-	<br>
-	
-   	<br>
-	<b>
-	  Attach File
-        </b>
-	<br>
-	<input type='file' id='file'>
-	<br>	
-	  
-	<br>
-        <b>
-	  Buttons
-	</b>
-	<br>
+          <tr>
+            <td>
+              <b>
+                I Like
+              </b>
+            </td>
+          </tr>
 
-	<input type='submit' value='Submit'>
-	<input type='reset' value='Reset'>
+          <tr>
+            <td>
+              <section class="veg">
+                <select id="veg1" size="5" multiple>
+                  <option>Mushroom</option>
+                  <option>Green peppers</option>
+                  <option>Onions</option>
+                  <option>Tomatoes</option>
+                  <option>Olives</option>
+                </select>   
+              </section>
+            </td>
+          </tr>
+
+          <tr>  
+            <td>
+              <b>
+                Menu
+              </b>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Your favourite color:</td>
+          </tr>
+          <tr>
+            <td>
+              <select name="color">
+                <option value="Red">Red</option>
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+              </select>
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <b>
+              Attach File
+              </b>
+            </td>
+          </tr>
+          <tr>
+            <td><input type='file' id='file'></td>
+          </tr>  
+            
+          <tr>
+            <td>
+              <b>
+                Buttons
+              </b>
+            </td>
+          </tr>
+
+          <tr>
+            <td><input type='submit' value='Submit'></td>
+            <td><input type='reset' value='Reset'></td>
+          </tr>
+
+        </table>
       </form>
     </div>
   </body> 
