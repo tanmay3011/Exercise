@@ -5,7 +5,7 @@ int main()
 {
 	int x[4][3],dw[4][3],w[5][3],y[4][1],i,j,p; //Comment1
 	for(i=0;i<=2;i++)
-	{
+	{//hbchdsbhdsbjdsn//
 		w[0][i]=0;
 	}
 	for(p=1;p<=4;p++)
