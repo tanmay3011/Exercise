@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+//Program for AND Hebbian
 int main()
 {
 	int x[4][3],dw[4][3],w[5][3],y[4][1],i,j,p; //Comment1
